@@ -15,13 +15,6 @@ header .branding {
 	font-size: 34px;
 }
 
-header .branding a.project-name {
-	/*letter-spacing: -2px;*/
-	font-weight: bold;
-	font-family: Tahoma;
-	color: white;
-}
-
 header .branding .subtext {
 	font-size: 12px;
 	vertical-align: middle;
