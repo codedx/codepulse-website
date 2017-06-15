@@ -1,6 +1,6 @@
 {
 	"documentation":  "https://github.com/secdec/codepulse/wiki",
-	"download":  "https://github.com/secdec/codepulse/releases/tag/v1.1.2",
+	"download":  "https://github.com/secdec/codepulse/releases/latest",
 	"owasp_project": "https://www.owasp.org/index.php/OWASP_Code_Pulse_Project",
 	"secdec": "http://securedecisions.com/",
 	"avi": "http://www.avi.com/",
