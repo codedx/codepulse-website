@@ -111,6 +111,7 @@ generateTemplateOutput('index', 'index.html', {
 		{css: "deps/features.css"},
 		{css: "deps/why.css"},
 		{css: 'deps/how.css'},
+		{js:  'deps/latest-version.js'},
 		{js:  'deps/jquerypp.hover.js'},
 		{js:  'deps/how.js'},
 		{js:  'deps/footer.js'}
