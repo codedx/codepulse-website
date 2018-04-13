@@ -7,8 +7,8 @@
 		"id": "what-languages",
 		"question": "What languages/platforms can Code Pulse monitor?",
 		"answer": [
-			"We presently support applications written in Java. Technically any language that runs on the JVM is supported, although how we organize and group the logical code constructs in Code Pulse might not be best suited for non-Java languages.",
-			"We are looking to add support for additional languages and platforms. High on that list is C# and .NET. Please {{#link 'contact_email' target='_top'}}let us know{{/link}} if there's a language/platform that you're particularly interested in."
+			"Code Pulse currently supports Java programs, up to Java 9, and .NET Framework programs for CLR versions 2 & 4.",
+			"If you would like Code Pulse to support another language/platform, please {{#link 'contact_email' target='_top'}}let us know{{/link}}."
 		]
 	}, {
 		"id": "do-i-need-modifications",
