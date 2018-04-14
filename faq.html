@@ -54,7 +54,7 @@
 				</div>
 			
 				<!-- "fork me on github!"" white banner -->
-				<a target="_blank" href="https://github.com/secdec/codepulse"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 1;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+				<a target="_blank" href="https://github.com/codedx/codepulse"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 1;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
 			
 				<div class="navigation-placeholder">
 					<!-- adds vertical space when the .navigation div is affixed -->
@@ -66,8 +66,8 @@
 							<li>
 								<a href="index.html"><i class="fa fa-home"></i> Home</a>
 							</li>
-							<li><a href="https://github.com/secdec/codepulse/releases/latest" target="_blank"><i class="fa fa-download"></i> Download</a></li>
-							<li><a href="https://github.com/secdec/codepulse/wiki" target="_blank"><i class="fa fa-book"></i> Docs</a></li>
+							<li><a href="https://github.com/codedx/codepulse/releases/latest" target="_blank"><i class="fa fa-download"></i> Download</a></li>
+							<li><a href="https://github.com/codedx/codepulse/wiki" target="_blank"><i class="fa fa-book"></i> Docs</a></li>
 							<li>
 								<a href="faq.html"><i class="fa fa-question-circle"></i> FAQ</a>
 							</li>
@@ -101,7 +101,7 @@
 				</div>
 				<div class="panel-collapse collapse" id="how-do-i">
 					<div class="panel-body">
-					<p>Code Pulse is a desktop application that runs on Windows, Mac OS X, and Linux. You can <a href="https://github.com/secdec/codepulse/releases/latest" target="_blank">download it</a> and follow the <a href="https://github.com/secdec/codepulse/wiki#quick-start" target="_blank">these instructions</a> on how to get started with using it.</p>
+					<p>Code Pulse is a desktop application that runs on Windows, macOS, and Linux. To get started, <a href="https://github.com/codedx/codepulse/releases/latest" target="_blank">download it</a> and follow these <a href="https://github.com/codedx/codepulse/wiki#quick-start" target="_blank"> instructions</a>.</p>
 					</div>
 				</div>
 			</div>			<div class="panel">
@@ -114,7 +114,7 @@
 				</div>
 				<div class="panel-collapse collapse" id="what-languages">
 					<div class="panel-body">
-					<p>We presently support applications written in Java. Technically any language that runs on the JVM is supported, although how we organize and group the logical code constructs in Code Pulse might not be best suited for non-Java languages.</p><p>We are looking to add support for additional languages and platforms. High on that list is C# and .NET. Please <a href="mailto:codepulse@securedecisions.com" target="_top">let us know</a> if there's a language/platform that you're particularly interested in.</p>
+					<p>Code Pulse currently supports Java programs, up to Java 9, and .NET Framework programs for CLR versions 2 & 4.</p><p>If you would like Code Pulse to support another language/platform, please <a href="mailto:support@codedx.com" target="_top">let us know</a>.</p>
 					</div>
 				</div>
 			</div>			<div class="panel">
@@ -127,7 +127,7 @@
 				</div>
 				<div class="panel-collapse collapse" id="do-i-need-modifications">
 					<div class="panel-body">
-					<p>No, you don't need to modify your application. Code Pulse uses a JVM agent to instrument your application at runtime. That means that we don't need you to modify your source or byte code. We automatically inject callbacks in your methods when your classes are being loaded. That's how we know when a method is covered or not. All you need to do is to startup your JVM with a special flag to load our agent within its context. You can find instruction on how to do that <a href="https://github.com/secdec/codepulse/wiki/Agent-Configuration" target="_blank">here</a>.</p>
+					<p>No, you don't need to modify your application. Code Pulse uses an agent to instrument your application at runtime. That means that we don't need you to modify your source or byte code. We automatically inject code in your methods when your classes are being loaded. That's how we know when a method is covered or not. All you need to do is start up your program in a way that loads our agent within its context. You can find instructions on how to do that for Java and .NET Framework applications <a href="https://github.com/codedx/codepulse/wiki/Agent-Configuration" target="_blank">here</a>.</p>
 					</div>
 				</div>
 			</div>			<div class="panel">
@@ -147,13 +147,13 @@
 				<div class="panel-heading">
 					<h4 class="panel-title">
 						<a data-toggle="collapse" href="#do-you-monitor-everything">
-							Do you monitor all activity in the JVM?
+							Do you monitor all application activity?
 						</a>
 					</h4>
 				</div>
 				<div class="panel-collapse collapse" id="do-you-monitor-everything">
 					<div class="panel-body">
-					<p>No. When using Code Pulse you set a flag for each part of the application that you want monitored/traced. We try to be smart about it and pick what we think are the most relevant packages or JSP files, but you can easily override that. You can even trace third party dependencies if you choose. Just keep in mind that the more you ask us to trace, the higher the resulting performance impact will be. We suggest that you start small first to get a feel for things and then increase what you trace as you get a better understanding of how much Code Pulse can handle with your application.</p>
+					<p>When using Code Pulse with Java applications, you set a flag for each part of the application that you want monitored/traced. We try to be smart about it and pick what we think are the most relevant packages or JSP files, but you can easily override that. For .NET applications, the .NET Tracer allows you to specify what should not be traced. You can trace third party dependencies if you choose. Just keep in mind that the more you ask us to trace, the higher the resulting performance impact will be. We suggest that you start small first to get a feel for things and then increase what you trace as you get a better understanding of how much Code Pulse can handle with your application.</p>
 					</div>
 				</div>
 			</div>			<div class="panel">
@@ -166,7 +166,7 @@
 				</div>
 				<div class="panel-collapse collapse" id="does-it-impact-performance">
 					<div class="panel-body">
-					<p>The short answer is yes. The long answer is that we've gone out of our way to minimize that performance hit. It's hard to quantify the impact of our instrumentation, but in our measurements we seem to impact web applications with a 1.5-2.5x performance slowdown. For most web applications this is barely noticeable but if you have an application that's CPU-bound, you will most likely notice the performance reduction. As far as memory consumption goes we do offer settings to reduce our memory footprint, but we suggest that you don't change those unless you're memory constrained. In most situations, Code Pulse uses very little memory in the monitored JVM.</p>
+					<p>The short answer is yes. The long answer is that we've gone out of our way to minimize that performance hit. It's hard to quantify the impact of our instrumentation, but in our measurements, based on Code Pulse v1, we seem to impact Java web applications with a 1.5-2.5x performance slowdown. If you have an application that's CPU-bound, you will most likely notice the performance reduction. As far as memory consumption goes, we do offer settings to reduce our memory footprint, but we suggest that you don't change those unless you're memory constrained. .NET Framework web applications may experience a more significant performance slowdown for initial requests.</p>
 					</div>
 				</div>
 			</div>			<div class="panel">
@@ -179,7 +179,7 @@
 				</div>
 				<div class="panel-collapse collapse" id="how-can-i-help">
 					<div class="panel-body">
-					<p>Thanks for asking. There's plenty to do. You can help us with our <a href="https://github.com/secdec/codepulse/wiki" target="_blank">wiki documentation</a>, <a href="https://github.com/secdec/codepulse/issues/new" target="_blank">report bugs</a>, and help us spread the word about Code Pulse! If you're feeling adventurous you can fork our code and fix any of the <a href="https://github.com/secdec/codepulse/issues" target="_blank">current issues</a>, take a first stab at some of our <a href="https://github.com/secdec/codepulse/issues/milestones" target="_blank">roadmap tasks</a>, or extend the application as you see fit and submit a pull request.</p>
+					<p>Thanks for asking. There's plenty to do. You can help us with our <a href="https://github.com/codedx/codepulse/wiki" target="_blank">wiki documentation</a>, <a href="https://github.com/codedx/codepulse/issues/new" target="_blank">report bugs</a>, and help us spread the word about Code Pulse! If you're feeling adventurous, you can fork our code and fix any of the <a href="https://github.com/codedx/codepulse/issues" target="_blank">current issues</a>, or extend the application as you see fit and submit a pull request.</p>
 					</div>
 				</div>
 			</div>		</div>
@@ -195,7 +195,7 @@
 					<div class="col-xs-3">
 						<h4 id="about">Visit Us</h4>
 						<div><a href="https://www.owasp.org/index.php/OWASP_Code_Pulse_Project" target="_blank">OWASP Code Pulse Page</a></div>
-						<div><a href="https://github.com/secdec/codepulse" target="_blank">Github Project Page</a></div>
+						<div><a href="https://github.com/codedx/codepulse" target="_blank">Github Project Page</a></div>
 						<div><a href="http://codedx.com/" target="_blank">Code Dx</a></div>
 						<div><a href="http://cwevis.org/" target="_blank">CWEvis</a></div>
 					</div>
@@ -203,13 +203,13 @@
 					<div class="col-xs-2">
 						<h4>Contact Us</h4>
 						<div>
-							<a href="https://twitter.com/codedx" target="_blank"><i class="fa fa-twitter"></i> @codedx</a>
+							<a href="https://twitter.com/codedx" target="_blank"><i class="fa fa-twitter"></i> @CodeDx</a>
 						</div>
 						<div>
-		<a href="https://github.com/secdec/codepulse/issues" target="_blank">						<i class="fa fa-github"></i> create an issue
+		<a href="https://github.com/codedx/codepulse/issues" target="_blank">						<i class="fa fa-github"></i> create an issue
 		</a>				</div>
 						<div>
-		<a href="mailto:codepulse@securedecisions.com" target="_top">						<i class="fa fa-envelope"></i> email us
+		<a href="mailto:support@codedx.com" target="_top">						<i class="fa fa-envelope"></i> email us
 		</a>				</div>
 					</div>
 		
@@ -218,7 +218,7 @@
 						<p>
 							Code Pulse is an
 							<a href="https://www.owasp.org/index.php/OWASP_Code_Pulse_Project" target="_blank">OWASP</a>
-							<a href="https://github.com/secdec/codepulse" target="_blank">open source project</a>
+							<a href="https://github.com/codedx/codepulse" target="_blank">open source project</a>
 							licensed under the
 							<a href="http://www.apache.org/licenses/LICENSE-2.0.html" target="_blank">Apache 2.0 License</a>
 						</p>
