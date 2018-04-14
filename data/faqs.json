@@ -32,6 +32,6 @@
 	}, {
 		"id": "how-can-i-help",
 		"question": "How can I help?",
-		"answer": "Thanks for asking. There's plenty to do. You can help us with our {{#link 'wiki'}}wiki documentation{{/link}}, {{#link 'github_new_issue'}}report bugs{{/link}}, and help us spread the word about Code Pulse! If you're feeling adventurous you can fork our code and fix any of the {{#link 'github_issues'}}current issues{{/link}}, take a first stab at some of our {{#link 'github_milestones'}}roadmap tasks{{/link}}, or extend the application as you see fit and submit a pull request."
+		"answer": "Thanks for asking. There's plenty to do. You can help us with our {{#link 'wiki'}}wiki documentation{{/link}}, {{#link 'github_new_issue'}}report bugs{{/link}}, and help us spread the word about Code Pulse! If you're feeling adventurous you can fork our code and fix any of the {{#link 'github_issues'}}current issues{{/link}}, or extend the application as you see fit and submit a pull request."
 	}
 ]
