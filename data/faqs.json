@@ -2,7 +2,7 @@
 	{
 		"id": "how-do-i",
 		"question": "How do I run/use Code Pulse?",
-		"answer": "Code Pulse is a desktop application that runs on Windows, macOS, and Linux. You can {{#link 'download'}}download it{{/link}} and follow the {{#link 'wiki_quick_start'}}these instructions{{/link}} on how to get started with using it."
+		"answer": "Code Pulse is a desktop application that runs on Windows, macOS, and Linux. To get started, {{#link 'download'}}download it{{/link}} and follow these {{#link 'wiki_quick_start'}} instructions{{/link}}."
 	}, {
 		"id": "what-languages",
 		"question": "What languages/platforms can Code Pulse monitor?",
@@ -13,7 +13,7 @@
 	}, {
 		"id": "do-i-need-modifications",
 		"question": "Do I need to modify my application for Code Pulse to monitor it?",
-		"answer": "No, you don't need to modify your application. Code Pulse uses an agent to instrument your application at runtime. That means that we don't need you to modify your source or byte code. We automatically inject code in your methods when your classes are being loaded. That's how we know when a method is covered or not. All you need to do is to startup your program in a way that loads our agent within its context. You can find instruction on how to do that for Java and .NET Framework applications {{#link 'wiki_agent_config'}}here{{/link}}."
+		"answer": "No, you don't need to modify your application. Code Pulse uses an agent to instrument your application at runtime. That means that we don't need you to modify your source or byte code. We automatically inject code in your methods when your classes are being loaded. That's how we know when a method is covered or not. All you need to do is start up your program in a way that loads our agent within its context. You can find instructions on how to do that for Java and .NET Framework applications {{#link 'wiki_agent_config'}}here{{/link}}."
 	}, {
 		"id": "how-accurate",
 		"question": "How accurate is the Code Pulse coverage information?",
@@ -24,11 +24,11 @@
 	}, {
 		"id": "do-you-monitor-everything",
 		"question": "Do you monitor all application activity?",
-		"answer": "No. When using Code Pulse you set a flag for each part of the application that you want monitored/traced. For Java, we try to be smart about it and pick what we think are the most relevant packages or JSP files, but you can easily override that. For .NET applications, the .NET Tracer allows you to specify what should not be traced. You can trace third party dependencies if you choose. Just keep in mind that the more you ask us to trace, the higher the resulting performance impact will be. We suggest that you start small first to get a feel for things and then increase what you trace as you get a better understanding of how much Code Pulse can handle with your application."
+		"answer": "When using Code Pulse you set a flag for each part of the application that you want monitored/traced. For Java, we try to be smart about it and pick what we think are the most relevant packages or JSP files, but you can easily override that. For .NET applications, the .NET Tracer allows you to specify what should not be traced. You can trace third party dependencies if you choose. Just keep in mind that the more you ask us to trace, the higher the resulting performance impact will be. We suggest that you start small first to get a feel for things and then increase what you trace as you get a better understanding of how much Code Pulse can handle with your application."
 	}, {
 		"id": "does-it-impact-performance",
 		"question": "Does Code Pulse impact the performance of the monitored applications?",
-		"answer": "The short answer is yes. The long answer is that we've gone out of our way to minimize that performance hit. It's hard to quantify the impact of our instrumentation, but in our measurements we seem to impact Java web applications with a 1.5-2.5x performance slowdown. For most web applications this is barely noticeable but if you have an application that's CPU-bound, you will most likely notice the performance reduction. As far as memory consumption goes we do offer settings to reduce our memory footprint, but we suggest that you don't change those unless you're memory constrained."
+		"answer": "The short answer is yes. The long answer is that we've gone out of our way to minimize that performance hit. It's hard to quantify the impact of our instrumentation, but in our measurements, based on Code Pulse v1, we seem to impact Java web applications with a 1.5-2.5x performance slowdown. If you have an application that's CPU-bound, you will most likely notice the performance reduction. As far as memory consumption goes, we do offer settings to reduce our memory footprint, but we suggest that you don't change those unless you're memory constrained. .NET Framework web applications may experience a more significant performance slowdown for initial requests."
 	}, {
 		"id": "how-can-i-help",
 		"question": "How can I help?",
