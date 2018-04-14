@@ -24,7 +24,7 @@
 	}, {
 		"id": "do-you-monitor-everything",
 		"question": "Do you monitor all application activity?",
-		"answer": "When using Code Pulse you set a flag for each part of the application that you want monitored/traced. For Java, we try to be smart about it and pick what we think are the most relevant packages or JSP files, but you can easily override that. For .NET applications, the .NET Tracer allows you to specify what should not be traced. You can trace third party dependencies if you choose. Just keep in mind that the more you ask us to trace, the higher the resulting performance impact will be. We suggest that you start small first to get a feel for things and then increase what you trace as you get a better understanding of how much Code Pulse can handle with your application."
+		"answer": "When using Code Pulse with Java applications, you set a flag for each part of the application that you want monitored/traced. We try to be smart about it and pick what we think are the most relevant packages or JSP files, but you can easily override that. For .NET applications, the .NET Tracer allows you to specify what should not be traced. You can trace third party dependencies if you choose. Just keep in mind that the more you ask us to trace, the higher the resulting performance impact will be. We suggest that you start small first to get a feel for things and then increase what you trace as you get a better understanding of how much Code Pulse can handle with your application."
 	}, {
 		"id": "does-it-impact-performance",
 		"question": "Does Code Pulse impact the performance of the monitored applications?",
