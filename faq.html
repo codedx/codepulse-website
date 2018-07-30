@@ -25,6 +25,12 @@
 		  ga('create', 'UA-50447789-1', 'code-pulse.com');
 		  ga('send', 'pageview');
 
+			var trackLink = function(url) {
+				ga('send', 'event', 'outbound', 'click', url, {
+					'transport': 'beacon',
+					'hitCallback': function(){document.location = url;}
+				});
+			}
 		</script>
 
 		<!-- page-specific JS and CSS files -->
@@ -66,7 +72,7 @@
 							<li>
 								<a href="index.html"><i class="fa fa-home"></i> Home</a>
 							</li>
-							<li><a href="https://github.com/codedx/codepulse/releases/latest" target="_blank"><i class="fa fa-download"></i> Download</a></li>
+							<li><a href="https://github.com/codedx/codepulse/releases/latest" target="_blank" onclick="trackLink('https://github.com/codedx/codepulse/releases/latest'); return false;"><i class="fa fa-download"></i> Download</a></li>
 							<li><a href="https://github.com/codedx/codepulse/wiki" target="_blank"><i class="fa fa-book"></i> Docs</a></li>
 							<li>
 								<a href="faq.html"><i class="fa fa-question-circle"></i> FAQ</a>
@@ -101,7 +107,7 @@
 				</div>
 				<div class="panel-collapse collapse" id="how-do-i">
 					<div class="panel-body">
-					<p>Code Pulse is a desktop application that runs on Windows, macOS, and Linux. To get started, <a href="https://github.com/codedx/codepulse/releases/latest" target="_blank">download it</a> and follow these <a href="https://github.com/codedx/codepulse/wiki#quick-start" target="_blank"> instructions</a>.</p>
+					<p>Code Pulse is a desktop application that runs on Windows, macOS, and Linux. To get started, <a href="https://github.com/codedx/codepulse/releases/latest" target="_blank" onclick="trackLink('https://github.com/codedx/codepulse/releases/latest'); return false;">download it</a> and follow these <a href="https://github.com/codedx/codepulse/wiki#quick-start" target="_blank"> instructions</a>.</p>
 					</div>
 				</div>
 			</div>			<div class="panel">
