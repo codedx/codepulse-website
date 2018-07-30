@@ -54,10 +54,14 @@ handlebars.registerHelper('wrap', function(options){
 	return wrapperTemplate(data)
 })
 
+function getUrl(name) {
+	return urlData[name] || '#todo'
+}
+
 // creates <a target="_blank" href="...">{{...}}</a>
 // where the href is based on a mapping from urls.json
 handlebars.registerHelper('link', function(context, options){
-	var url = urlData[context] || '#todo'
+	var url = getUrl(context)
 
 	var attribs = {
 		target: '_blank'
@@ -68,7 +72,6 @@ handlebars.registerHelper('link', function(context, options){
 	}
 
 	var s = "<a href=\"" + url + "\""
-	// target=\"_blank\">"
 
 	for(var key in attribs){
 		s += ' '
@@ -86,7 +89,11 @@ handlebars.registerHelper('link', function(context, options){
 
 // similar to the link helper, but just returns the url
 handlebars.registerHelper('url', function(context, options){
-	return urlData[context] || '#todo'
+	return getUrl(context)
+})
+
+handlebars.registerHelper('trackLink', function(context, options){
+	return "trackLink('" + (getUrl(context)) + "'); return false;"
 })
 
 // clean the 'dist' directory

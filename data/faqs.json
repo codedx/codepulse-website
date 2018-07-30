@@ -2,7 +2,7 @@
 	{
 		"id": "how-do-i",
 		"question": "How do I run/use Code Pulse?",
-		"answer": "Code Pulse is a desktop application that runs on Windows, macOS, and Linux. To get started, {{#link 'download'}}download it{{/link}} and follow these {{#link 'wiki_quick_start'}} instructions{{/link}}."
+		"answer": "Code Pulse is a desktop application that runs on Windows, macOS, and Linux. To get started, {{#link 'download' onclick=(trackLink 'download')}}download it{{/link}} and follow these {{#link 'wiki_quick_start'}} instructions{{/link}}."
 	}, {
 		"id": "what-languages",
 		"question": "What languages/platforms can Code Pulse monitor?",
