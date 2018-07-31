@@ -24,12 +24,10 @@
 
 		  ga('create', 'UA-50447789-1', 'code-pulse.com');
 		  ga('send', 'pageview');
+		  ga('set', 'anonymizeIp', true);
 
 			var trackLink = function(url) {
-				ga('send', 'event', 'outbound', 'click', url, {
-					'transport': 'beacon',
-					'hitCallback': function(){document.location = url;}
-				});
+				ga('send', 'event', 'outbound', 'click', url, { transport: 'beacon' });
 			}
 		</script>
 
