@@ -6,7 +6,7 @@
 		<meta name="description" content="Identify coverage gaps by monitoring penetration testing code coverage in real-time">
 		<!-- default required JS anc CSS files -->
 		<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
-		<link rel="stylesheet" 
+		<link rel="stylesheet"
 			href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
 		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		<link rel="stylesheet"
@@ -26,8 +26,8 @@
 		  ga('send', 'pageview');
 		  ga('set', 'anonymizeIp', true);
 
-			var trackLink = function(url) {
-				ga('send', 'event', 'outbound', 'click', url, { transport: 'beacon' });
+			var trackLink = function(url, category) {
+				ga('send', 'event', category, 'click', url, { transport: 'beacon' });
 			}
 		</script>
 
@@ -70,7 +70,7 @@
 							<li>
 								<a href="index.html"><i class="fa fa-home"></i> Home</a>
 							</li>
-							<li><a href="https://github.com/codedx/codepulse/releases/latest" target="_blank" onclick="trackLink('https://github.com/codedx/codepulse/releases/latest'); return false;"><i class="fa fa-download"></i> Download</a></li>
+							<li><a href="https://github.com/codedx/codepulse/releases/latest" target="_blank" onclick="trackLink('https://github.com/codedx/codepulse/releases/latest', 'Download');"><i class="fa fa-download"></i> Download</a></li>
 							<li><a href="https://github.com/codedx/codepulse/wiki" target="_blank"><i class="fa fa-book"></i> Docs</a></li>
 							<li>
 								<a href="faq.html"><i class="fa fa-question-circle"></i> FAQ</a>
@@ -105,7 +105,7 @@
 				</div>
 				<div class="panel-collapse collapse" id="how-do-i">
 					<div class="panel-body">
-					<p>Code Pulse is a desktop application that runs on Windows, macOS, and Linux. To get started, <a href="https://github.com/codedx/codepulse/releases/latest" target="_blank" onclick="trackLink('https://github.com/codedx/codepulse/releases/latest'); return false;">download it</a> and follow these <a href="https://github.com/codedx/codepulse/wiki#quick-start" target="_blank"> instructions</a>.</p>
+					<p>Code Pulse is a desktop application that runs on Windows, macOS, and Linux. To get started, <a href="https://github.com/codedx/codepulse/releases/latest" target="_blank" onclick="trackLink('https://github.com/codedx/codepulse/releases/latest', 'Download');">download it</a> and follow these <a href="https://github.com/codedx/codepulse/wiki#quick-start" target="_blank"> instructions</a>.</p>
 					</div>
 				</div>
 			</div>			<div class="panel">
