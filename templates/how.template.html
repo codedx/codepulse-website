@@ -10,8 +10,8 @@
 	<div class="col-sm-5">
 		<div id="how-steps">
 			<div id="how-download" class="step">
-				{{#link 'download' onclick=(trackLink 'download')}}<img class="pull-right" src="deps/img/download-zip.png" />{{/link}}
-				<div class="caption">{{#link 'download' onclick=(trackLink 'download')}}Download Code Pulse{{/link}}, extract the zip archive, and run the application.</div>
+				{{#link 'download' onclick=(trackDownloadLink 'download')}}<img class="pull-right" src="deps/img/download-zip.png" />{{/link}}
+				<div class="caption">{{#link 'download' onclick=(trackDownloadLink 'download')}}Download Code Pulse{{/link}}, extract the zip archive, and run the application.</div>
 				<div class="clearfix"></div>
 				<a class="step-link" target="_blank" href="{{url 'wiki_installation'}}">Detailed Installation Instructions</a>
 			</div>

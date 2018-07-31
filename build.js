@@ -92,8 +92,8 @@ handlebars.registerHelper('url', function(context, options){
 	return getUrl(context)
 })
 
-handlebars.registerHelper('trackLink', function(context, options){
-	return "trackLink('" + (getUrl(context)) + "'); return false;"
+handlebars.registerHelper('trackDownloadLink', function(context, options){
+	return "trackLink('" + (getUrl(context)) + "', 'Download');"
 })
 
 // clean the 'dist' directory

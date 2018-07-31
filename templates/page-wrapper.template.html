@@ -6,7 +6,7 @@
 		<meta name="description" content="Identify coverage gaps by monitoring penetration testing code coverage in real-time">
 		<!-- default required JS anc CSS files -->
 		<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
-		<link rel="stylesheet" 
+		<link rel="stylesheet"
 			href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
 		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		<link rel="stylesheet"
@@ -26,8 +26,8 @@
 		  ga('send', 'pageview');
 		  ga('set', 'anonymizeIp', true);
 
-			var trackLink = function(url) {
-				ga('send', 'event', 'outbound', 'click', url, { transport: 'beacon' });
+			var trackLink = function(url, category) {
+				ga('send', 'event', category, 'click', url, { transport: 'beacon' });
 			}
 		</script>
 
