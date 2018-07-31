@@ -27,10 +27,7 @@
 		  ga('set', 'anonymizeIp', true);
 
 			var trackLink = function(url) {
-				ga('send', 'event', 'outbound', 'click', url, {
-					'transport': 'beacon',
-					'hitCallback': function(){document.location = url;}
-				});
+				ga('send', 'event', 'outbound', 'click', url, { transport: 'beacon' });
 			}
 		</script>
 
@@ -187,7 +184,7 @@
 		<div class="section">
 			<div class="text-center">
 				<h3>Code Pulse is a free real-time code coverage tool for penetration testing activities</h3>
-				<a href="https://github.com/codedx/codepulse/releases/latest" class="btn btn-lg btn-primary" onclick="trackLink(&#x27;https://github.com/codedx/codepulse/releases/latest&#x27;); return false;">Download Code Pulse<span class="version"><em>checking latest version&hellip;</em></span></a>
+				<a href="https://github.com/codedx/codepulse/releases/latest" class="btn btn-lg btn-primary" target="_blank" onclick="trackLink(&#x27;https://github.com/codedx/codepulse/releases/latest&#x27;); return false;">Download Code Pulse<span class="version"><em>checking latest version&hellip;</em></span></a>
 			</div>		</div>
 	</article>
 
