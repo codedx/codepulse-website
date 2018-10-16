@@ -51,10 +51,6 @@ article h1 {
 	-moz-box-sizing: border-box;
 }
 
-.section.carousel {
-	width: 785px;
-}
-
 .section.narrow {
 	padding-left: 150px;
 	padding-right: 150px;
