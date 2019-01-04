@@ -7,7 +7,7 @@
 		"id": "what-languages",
 		"question": "What languages/platforms can Code Pulse monitor?",
 		"answer": [
-			"Code Pulse currently supports Java programs, up to Java 9, and .NET Framework programs for CLR versions 2 & 4.",
+			"Code Pulse currently supports Java programs, up to Java 11, and .NET Framework programs for CLR versions 2 & 4.",
 			"If you would like Code Pulse to support another language/platform, please {{#link 'contact_email' target='_top'}}let us know{{/link}}."
 		]
 	}, {
