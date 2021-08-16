@@ -4,7 +4,6 @@
 	"owasp_project": "https://www.owasp.org/index.php/OWASP_Code_Pulse_Project",
 	"codedx": "http://codedx.com/",
 	"codedx_at_twitter": "https://twitter.com/codedx",
-	"cwevis": "http://cwevis.org/",
 	"contact_email": "mailto:support@codedx.com",
 	"license": "http://www.apache.org/licenses/LICENSE-2.0.html",
 	"github": "https://github.com/codedx/codepulse",
